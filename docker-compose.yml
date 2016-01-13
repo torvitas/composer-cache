@@ -1,0 +1,7 @@
+composercache:
+    image: busybox:buildroot-2014.02
+    command: chmod a+rwx /tmp/composer/cache /home/node/.cache/bower
+    volumes:
+        - /tmp/composer/cache
+        - /home/node/.cache/bower
+
